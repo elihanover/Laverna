@@ -13,8 +13,22 @@ This forks the current state of mainnet with all contracts and account balances 
 
 ### 2. Run Scripts
 ```js
-import { loadWallets } from 'loadERC20.js'
+import { loadWallets, loadWallet, setupAccounts } from 'loadERC20.js'
 
+// load all 10 provider wallets
 loadWallets('dai', 1000)
-loadWallets('uni', 400)
+
+// load individual wallet
+// (note addressFrom most be an unlocked address)
+loadWallet(addressTo, addressFrom, 'dai', 1000)
+
+setupAccounts([
+    {
+        'dai': 100,
+    },
+    {
+        'dai': 50
+    }
+])
+
 ```
