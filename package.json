@@ -1,0 +1,15 @@
+{
+  "name": "laverna",
+  "version": "1.0.0",
+  "description": "```bash ganache-cli -f https://mainnet.infura.io/v3/{YOUR_KEY} -u {ADDRESS TO STEAL FROM} ``` This forks the current state of mainnet with all contracts and account balances and unlocks the account we will steal tokens from.",
+  "main": "Laverna.js",
+  "dependencies": {
+    "web3": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
